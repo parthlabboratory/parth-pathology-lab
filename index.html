@@ -1,0 +1,364 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parth Pathology Laboratory</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }body {
+  background: #f5f7fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #00796b, #00bfa5);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 20px;
+}
+
+nav {
+  background: #004d40;
+  padding: 12px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffeb3b;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background: white;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.hero-text h2 {
+  font-size: 42px;
+  color: #00796b;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-text button {
+  background: #00796b;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-text button:hover {
+  background: #004d40;
+}
+
+.hero-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+section {
+  padding: 60px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  color: #00796b;
+  margin-bottom: 40px;
+}
+
+.tests {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #00796b;
+  margin-bottom: 15px;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.price-box {
+  background: #00796b;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  border-radius: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.price-box h2 {
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+.contact {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact p {
+  margin: 12px 0;
+  font-size: 18px;
+}
+
+footer {
+  background: #004d40;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+@media(max-width: 768px) {
+  header h1 {
+    font-size: 34px;
+  }
+
+  .hero-text h2 {
+    font-size: 30px;
+  }
+}
+
+  </style>
+</head>
+<body>  <header>
+    <h1>PARTH PATHOLOGY LABORATORY</h1>
+    <p>Complete Health Checkup & Diagnostic Services</p>
+  </header>  <nav>
+    <a href="#home">Home</a>
+    <a href="#tests">Tests</a>
+    <a href="#packages">Packages</a>
+    <a href="#contact">Contact</a>
+  </nav>  <section class="hero" id="home">
+    <div class="hero-text">
+      <h2>Premium Health Checkup</h2>
+      <p>
+        Accurate pathology testing with trusted reports.
+        CBC, Vitamin D3, B12, Thyroid, Hormones, LFT, RFT,
+        Diabetes Profile and many more tests available.
+      </p>
+      <button onclick="window.location.href='#contact'">
+        Book Test Now
+      </button>
+    </div><div class="hero-image">
+  <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1200&auto=format&fit=crop" alt="Lab" />
+</div>
+
+  </section>  <section id="tests">
+    <h2 class="section-title">Available Tests</h2><div class="tests">
+
+  <div class="card">
+    <h3>CBC / Haemogram</h3>
+    <ul>
+      <li>Hemoglobin</li>
+      <li>RBC Count</li>
+      <li>WBC Count</li>
+      <li>Platelet Count</li>
+      <li>ESR</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Vitamin Profile</h3>
+    <ul>
+      <li>Vitamin B12</li>
+      <li>Vitamin D3</li>
+      <li>Calcium</li>
+      <li>Iron Profile</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Thyroid Profile</h3>
+    <ul>
+      <li>TSH</li>
+      <li>T3</li>
+      <li>T4</li>
+      <li>Free T3 / T4</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Hormone Profile</h3>
+    <ul>
+      <li>Testosterone</li>
+      <li>FSH</li>
+      <li>LH</li>
+      <li>Prolactin</li>
+      <li>Estrogen</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Liver Function Test (LFT)</h3>
+    <ul>
+      <li>SGOT</li>
+      <li>SGPT</li>
+      <li>Bilirubin</li>
+      <li>Albumin</li>
+      <li>Protein</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Renal Function Test (RFT)</h3>
+    <ul>
+      <li>Creatinine</li>
+      <li>Urea</li>
+      <li>Uric Acid</li>
+      <li>Sodium</li>
+      <li>Potassium</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Diabetes Profile</h3>
+    <ul>
+      <li>Fasting Sugar</li>
+      <li>PP Sugar</li>
+      <li>HbA1c</li>
+      <li>Insulin Test</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Lipid Profile</h3>
+    <ul>
+      <li>Total Cholesterol</li>
+      <li>HDL</li>
+      <li>LDL</li>
+      <li>Triglycerides</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Urine Tests</h3>
+    <ul>
+      <li>Urine Routine</li>
+      <li>Urine Culture</li>
+      <li>Pregnancy Test</li>
+    </ul>
+  </div>
+
+</div>
+
+  </section>  <section id="packages">
+    <h2 class="section-title">Health Package</h2><div class="price-box">
+  <p>Complete Health Checkup Package</p>
+  <h2>₹2000</h2>
+  <p>
+    CBC + Thyroid + Vitamin D3 + Vitamin B12 +
+    LFT + RFT + Lipid Profile + Diabetes Profile
+  </p>
+</div>
+
+  </section>  <section id="contact">
+    <h2 class="section-title">Contact Us</h2><div class="contact">
+  <p><strong>Lab Name:</strong> Parth Pathology Laboratory</p>
+  <p><strong>Owner:</strong> Dr. Subodh S. Shah</p>
+  <p><strong>Phone:</strong> +91 9824799175</p>
+  <p><strong>Alternative Phone:</strong> +91 9773042756</p>
+  <p><strong>Address:</strong> First Floor, Shubham Complex, Nr. K.K. Nagar Char Rasta, Ghatlodiya, Ahmedabad</p>
+  <p><strong>Emergency Services:</strong> 24 x 7 Available</p>
+</div>
+
+  </section><a href="https://wa.me/919824799175" target="_blank" class="whatsapp-button">
+WhatsApp Booking
+
+  </a>  <style>
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 15px 22px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 9999;
+      transition: 0.3s;
+    }
+
+    .whatsapp-button:hover {
+      background: #128C7E;
+      transform: scale(1.05);
+    }
+  </style><footer>
+    <p>© 2025 Parth Pathology Laboratory | All Rights Reserved</p>
+  </footer></body>
+  </html>
